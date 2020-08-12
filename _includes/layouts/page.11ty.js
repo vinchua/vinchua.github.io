@@ -23,7 +23,9 @@ exports.data = {
 exports.render = data =>
   `<article>
     <header class="article-header">
-      <h2>${data.title}</h2>
+      
     </header>
     ${data.content}
   </article>`
+
+  // <h2>${data.title}</h2>

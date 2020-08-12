@@ -26,7 +26,7 @@ module.exports = eleventyConfig =>
     return `<header id="site_header">
       <a href="#main" class="screen-reader-text">${l10n.skipToContent}</a>
       <h1 class="no-margin"
-        style="--font-size:${50 / l10n.title.split('').length}vw;">
+        style="--font-size:${30 / l10n.title.split('').length}vw;">
         <a href="/" 
           ${data.page.url === '/' ? 'aria-current="page"' : ''}>${l10n.title}</a>
       </h1>

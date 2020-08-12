@@ -28,7 +28,7 @@ module.exports = eleventyConfig =>
       --grayscale-400: ${data.colors.grayscale[400].hex};
       --grayscale-600: ${data.colors.grayscale[600].hex};
       --white: ${data.colors.grayscale.white.hex};
-      --offwhite: #eeeee6;
+      // --offwhite: #eeeee6;
       /* Named Properties */
       --background-color: var(--white);
       --gray: var(--grayscale-600);
@@ -38,7 +38,7 @@ module.exports = eleventyConfig =>
     }
     @media (prefers-color-scheme: dark) {
       :root {
-        --background-color: var(--offwhite);
+        --background-color: var(--white);
         --gray: var(--grayscale-400);
         --text-color: var(--black);
       }

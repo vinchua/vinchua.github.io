@@ -1,7 +1,7 @@
 ---
 title: My Blog
 navTitle: Blog
-tags: nav
+tags: 
 weight: 3
 layout: layouts/archive
 pagination:

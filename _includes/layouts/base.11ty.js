@@ -17,7 +17,7 @@ module.exports = function (data) {
   return `<!DOCTYPE html>
   <html lang="${data.locale ? l10n.locale : data.site.defaultLocale}">
     ${this.headTag(data)}
-    <body class="grid gap no-margin">
+    <body class="grid">
       ${this.siteHeader(data)}
       ${this.nav(data.collections.nav, data.page, '', l10n.nav.primary)}
       <main id="main" class="grid gap">

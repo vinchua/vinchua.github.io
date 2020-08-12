@@ -1,11 +1,11 @@
 ---
-title: About me
-navTitle: About
+title: 
+navTitle: Skills
 tags: nav
 weight: 1
 ---
 
-Hi there, I'm Vincent. I'm going into my 5th year at UBC studying Computer Engineering. Through my co-op experiences, I have a background in IT, system administration, and DevOps. In my spare time, I enjoy distro-hopping, playing the piano, and browsing Reddit. 
+Hi there, I'm Vincent. I'm going into my 5th year at UBC studying Computer Engineering. Through my co-op experiences, I have a background in IT, system administration, and DevOps.
 
 Currently I am looking for a full-time DevOps and/or IT position beginning May 2021.
 
@@ -23,10 +23,20 @@ C, C++, Java, Bash, Powershell, Python, Groovy, YAML, VBScript
 - VMWare vSphere
 
 ### DevOps Tools
-Jenkins, Docker, Ansible, Azure Devops
+- Jenkins
+    - Managing Jenkins servers, pipelines, and freestyle jobs
+    - Codify jobs in YAML/Groovy with Jenkins Job Builder and Jenkinsfiles
+    - YAML, Groovy, Bash, Python, Perl, Batch, Powershell
+    - Plugin integration (Static Code Analysis, Warnings NG)
+- Docker
+    - Create Dockerfiles, build and export images 
+- Ansible
+    - Deploy software and configurations with playbooks
+- Azure Devops
+    - Simple build pipelines
 
 ### Linux 
 - Working in CentOS and Ubuntu environments
-- Compiling software from source
+- Compile software from source
 
 
