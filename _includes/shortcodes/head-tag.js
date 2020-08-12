@@ -27,7 +27,7 @@ module.exports = eleventyConfig =>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       ${this.authorMeta(data)}
       ${this.description(data)}
-      ${this.favicon(data)}
+      
       ${this.socialMeta(data)}
       <style>
         ${this.minifyCSS(this.inlineCSS(data))}
@@ -35,3 +35,5 @@ module.exports = eleventyConfig =>
       ${this.externalCSS(data)}
     </head>`
   })
+
+  // ${this.favicon(data)}

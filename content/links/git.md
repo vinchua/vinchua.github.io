@@ -1,6 +1,6 @@
 ---
-title: Git
+title: GitHub
 tags: nav
 weight: 4
-url: 'https://gitlab.com/reubenlillie/eleventy-dot-js-blog'
+url: 'https://github.com/vinchua'
 ---

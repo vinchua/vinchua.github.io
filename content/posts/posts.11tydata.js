@@ -10,11 +10,12 @@
  * @see {@link  https://www.11ty.dev/docs/permalinks/ Permalinks in 11ty}
  */
 module.exports = {
-  layout: 'layouts/post',
-  // Note: The permalink value uses Nunjucks/Liquid syntax;
-  // a future version of 11ty may allow for JavaScript template literals
-  permalink: '/{{site.en.postsArchive.url}}/{{page.fileSlug}}/index.html',
-  tags: [
-    'posts'
-  ]
+    layout: 'layouts/post',
+    // Note: The permalink value uses Nunjucks/Liquid syntax;
+    // a future version of 11ty may allow for JavaScript template literals
+    permalink: '/{{site.en.postsArchive.url}}/{{page.fileSlug}}/index.html',
+    tags: [
+      'posts'
+    ]
 }
+  

@@ -1,5 +1,5 @@
 /**
- * @file Defines the chained template for the 404 page
+ * @file Defines the chained template for the blog post
  * @author Reuben L. Lillie <reubenlillie@gmail.com>
  * @see {@link https://www.11ty.dev/docs/layouts/#layout-chaining Layout chaining in 11ty}
  */
@@ -9,21 +9,19 @@
  * @see {@link https://www.11ty.dev/docs/languages/javascript/#optional-data-method Optional `data` in JavaScript templates in 11ty}
  */
 exports.data ={
-  locale: 'en',
-  title: 'Hm, there\'s no page here',
-  layout: 'layouts/page',
-  permalink: '404.html',
+  title: 'Hello world!',
+  date: '2020-08-01',
+  permalink: '/blog/hello-world/',
   templateEngineOverride: '11ty.js,md',
-  eleventyExcludeFromCollections: true
+  description: ''
 }
 
 /**
- * The content of the 404 page template
+ * The content of the blog post
  * @method
  * @name render()
  * @param {Object} data 11ty’s data object
  * @return {String} The rendered template
- * @see {@link https://www.11ty.dev/docs/quicktips/not-found/ 404 pages in 11ty}
  */
 exports.render = data =>
-`The page your looking can’t be found at the address you requested.`
+`_Hello world!_`

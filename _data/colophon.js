@@ -16,7 +16,7 @@
  */
 module.exports = {
   en: {
-    generator: '🏗️ Created by <a href=\"https://twitter.com/reubenlillie\">@reubenlillie</a> with the static site generator <a href=\"https://11ty.dev/\">🕚  Eleventy</a>.',
+    generator: 'Powered by <a href=\"https://11ty.dev/\">Eleventy</a>.',
     languages: 'Source code written in 🍦 vanilla JavaScript, 🕸️ semantic HTML, 🎨 progressively enhanced CSS, and a 🧂 dash of Markdown.',
     git: '💝 Contribute on <a href=\"http://gitlab.com/reubenlillie/eleventy-dot-js-blog/\">GitLab</a>.',
     host: '🚀 Hosted on <a href=\"https://netlify.com/\">Netlify</a>.'

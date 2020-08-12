@@ -22,8 +22,9 @@ module.exports = eleventyConfig =>
    */
   eleventyConfig.addShortcode('colophon', data => {
     var l10n = data.colophon[data.locale]
-    return `<a href="${data.pkg.homepage}">${data.pkg.name} ${data.pkg.version}</a><br>
-      ${l10n.generator} ${l10n.host}<br>
-      ${l10n.languages}<br>
-      ${l10n.git}`
+    return `${l10n.generator} <br>`
+      // <a href="${data.pkg.homepage}">${data.pkg.name} ${data.pkg.version}</a><br></br>
+      // ${l10n.host}<br>
+      // ${l10n.languages}<br>
+      // ${l10n.git}`
   })

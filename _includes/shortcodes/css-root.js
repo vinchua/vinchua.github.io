@@ -28,17 +28,18 @@ module.exports = eleventyConfig =>
       --grayscale-400: ${data.colors.grayscale[400].hex};
       --grayscale-600: ${data.colors.grayscale[600].hex};
       --white: ${data.colors.grayscale.white.hex};
+      --offwhite: #eeeee6;
       /* Named Properties */
       --background-color: var(--white);
       --gray: var(--grayscale-600);
-      --border: 2px dashed var(--gray);
+      --border: 2px solid var(--gray);
       --text-color: var(--black);
       --base-unit: 1em;
     }
     @media (prefers-color-scheme: dark) {
       :root {
-        --background-color: var(--black);
+        --background-color: var(--offwhite);
         --gray: var(--grayscale-400);
-        --text-color: var(--white);
+        --text-color: var(--black);
       }
     }`)

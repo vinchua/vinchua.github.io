@@ -24,12 +24,11 @@ exports.render = function (data) {
   var l10n = data.site[data.locale]
   var reversed = [...data.collections.posts.slice(-2)].reverse()
   return `<article>
-    <!-- ⬇️  Delete between this line … -->
-      ${this.gettingStarted(data)}
-    <!-- ⬆️  … and this line -->
-    ${data.content}
-    <h2>${l10n.postsArchive.headline}</h2>
-    ${this.archive(data, reversed)}
-    <p><a href="${l10n.postsArchive.url}">${l10n.postsArchive.prompt}</a></p>
+    ${data.content} <br> <br>
   </article>`
 }
+
+
+    // <h2>${l10n.postsArchive.headline}</h2>
+    // ${this.archive(data, reversed)}
+    // <p><a href="${l10n.postsArchive.url}">${l10n.postsArchive.prompt}</a></p>

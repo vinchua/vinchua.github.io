@@ -32,8 +32,8 @@
 
 body {
   grid-template-rows: auto auto 1fr auto;
-  grid-template-columns: 1fr minmax(calc(100vw - 66ch), 66ch) 1fr; 
-  min-height: 100vh;
+  grid-template-columns: 1fr 65ch 1fr; 
+  min-height: calc(100vh - 24px);
 }
 
 #site_header,
@@ -75,9 +75,10 @@ code {
 
 /* Typography */
 body {
-  font-family: system-ui, serif;
-  font-size: 1.25em;
-  line-height: 1.5;
+  /* font-family: system-ui, serif; */
+  font-family: 'PT Serif',Georgia,Times,'Times New Roman',serif;
+  font-size: 1.2em;
+  line-height: 1.7;
   text-rendering: optimizeLegibility;
 }
 
@@ -87,9 +88,9 @@ time {
 }
 
 article p {
-  text-indent: var(--base-unit);
-  text-align: justify;
-  hyphens: auto;
+  /* text-indent: var(--base-unit); */
+  text-align: left;
+  hyphens: none;
 }
 
 time,

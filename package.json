@@ -1,7 +1,7 @@
 {
-  "name": "eleventy-dot-js-blog",
-  "version": "0.1.1",
-  "description": "A starter project showing how to build a blog with the Eleventy static site generator using JavaScript templates.",
+  "name": "Vincent Chua",
+  "version": "0.0.1",
+  "description": "Vincent Chua's personal site.",
   "main": "index.js",
   "scripts": {
     "build": "ELEVENTY_ENV=production npx eleventy",
@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://gitlab.com/reubenlillie/eleventy-dot-js-blog/issues"
   },
-  "homepage": "https://gitlab.com/reubenlillie/eleventy-dot-js-blog#readme",
+  "homepage": "https://vinchua.github.io",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
     "clean-css": "^4.2.3",

@@ -29,7 +29,7 @@ var includes = require('./_includes/index')
  */
 module.exports = function (eleventyConfig) {
 
-  // Pass 11ty’s Conig object to the includes module (~/_includes)
+  // Pass 11ty’s Config object to the includes module (~/_includes)
   includes(eleventyConfig)
 
   /**
