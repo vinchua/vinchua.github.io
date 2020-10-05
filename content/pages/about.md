@@ -27,16 +27,19 @@ C, C++, Java, Bash, Powershell, Python, Groovy, YAML, VBScript
     - Managing Jenkins servers, pipelines, and freestyle jobs
     - Codify jobs in YAML/Groovy with Jenkins Job Builder and Jenkinsfiles
     - YAML, Groovy, Bash, Python, Perl, Batch, Powershell
-    - Plugin integration (Static Code Analysis, Warnings NG)
+    - Plugin Integration (Static Code Analysis, Warnings NG)
 - Docker
     - Create Dockerfiles, build and export images 
 - Ansible
     - Deploy software and configurations with playbooks
 - Azure Devops
     - Simple build pipelines
+    - Azure Functions
+- AWS (EC2, S3, CloudFormation)
+    - completed Cloud Practioner Essentials online training
 
 ### Linux 
-- Working in CentOS and Ubuntu environments
+- Development and administration for CentOS and Ubuntu environments
 - Compile software from source
 
 
