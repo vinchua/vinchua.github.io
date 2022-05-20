@@ -6,12 +6,15 @@ weight: 1
 permalink: '/'
 ---
 
-Hi, I'm Vincent. I study Computer Engineering at the University of British Columbia. 
+Hi, I'm Vincent. I'm a DevOps Developer at IBM Canada, on the SaaS team for Cloud Pak for Business Automation. 
 
-I have a background in IT, system administration, and DevOps, having worked at the [Genome Sciences Center](https://www.bcgsc.ca/) on the IT Systems team, and as a DevOps engineer at [FLIR Systems](https://www.flir.ca/iis/machine-vision). I have also worked as a firmware developer at [Arlo Technologies](https://www.arlo.com/en-ca/default.aspx).
+I graduated from the University of British Columbia, with a Bachelors in Computer Engineering. 
 
-I'm interested in DevOps and IT technologies, and am a fan of working on the command line. In my free time, I enjoy distro-hopping, playing the piano, and learning Mandarin. 
+I've worked at:
+- [Genome Sciences Center](https://www.bcgsc.ca/) on the IT Systems team as a co-op
+- [FLIR Systems](https://www.flir.ca/iis/machine-vision) as a DevOps Engineer co-op
+- [Arlo Technologies](https://www.arlo.com/en-ca/default.aspx) as a Firmware developer co-op
 
-Currently, I am looking for full-time DevOps/IT positions beginning May 2021.
+I'm interested in DevOps and IT technologies and enjoy working on the command line. In my free time, I enjoy distro-hopping on Linux (currently using Endeavour OS), playing the piano, and learning Mandarin. 
 
 <!-- You can add unique content here with Markdown (`./content/index.md`), or you can customize the chained homepage layout (`./_includes/layouts/home.11ty.js`). -->

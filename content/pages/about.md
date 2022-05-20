@@ -5,24 +5,12 @@ tags: nav
 weight: 1
 ---
 
-Hi there, I'm Vincent. I'm going into my 5th year at UBC studying Computer Engineering. Through my co-op experiences, I have a background in IT, system administration, and DevOps.
-
-Currently I am looking for a full-time DevOps and/or IT position beginning May 2021.
-
 The following are skills I have been exposed to, in no particular order.
 
 ### Programming and Scripting Languages
-C, C++, Java, Bash, Powershell, Python, Groovy, YAML, VBScript
+Python, YAML, Bash, Java/Groovy
 
-### IT and System Administration
-- Windows Server 2012, Group Policy Management
-- Active Directory, LDAP
-- Puppet 
-- HPC Administration (Slurm)
-- Microsoft Exchange
-- VMWare vSphere
-
-### DevOps Tools
+### Tools and Technologies Used
 - Jenkins
     - Managing Jenkins servers, pipelines, and freestyle jobs
     - Codify jobs in YAML/Groovy with Jenkins Job Builder and Jenkinsfiles
@@ -32,14 +20,24 @@ C, C++, Java, Bash, Powershell, Python, Groovy, YAML, VBScript
     - Create Dockerfiles, build and export images 
 - Ansible
     - Deploy software and configurations with playbooks
-- Azure Devops
-    - Simple build pipelines
-    - Azure Functions
+- Kubernetes 
+    - Red Hat Openshift Kubernetes experience configuring secrets, configmaps, daemonsets, pods
+    - Debug worker nodes
+- Hashicorp Vault
 - AWS (EC2, S3, CloudFormation)
     - completed Cloud Practioner Essentials online training
+
+### IT and System Administration
+- Windows Server 2012, Group Policy Management
+- Active Directory and LDAP
+- Puppet 
+- HPC Administration (Slurm)
+- Microsoft Exchange
+- VMWare vSphere
 
 ### Linux 
 - Development and administration for CentOS and Ubuntu environments
 - Compile software from source
+- Debug system issues with networking, firewall, authentication
 
 
