@@ -43,6 +43,7 @@ module.exports = function (eleventyConfig) {
    * @see {@link https://www.11ty.dev/docs/copy/ Passthrough copy in 11ty}
    */
   eleventyConfig.addPassthroughCopy('css')
+  eleventyConfig.addPassthroughCopy('content/*pdf')
 
   /**
    * Have Eleventy watch the following additional files for live browsersync
