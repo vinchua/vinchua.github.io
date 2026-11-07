@@ -40,11 +40,11 @@ buildExpired = false
     Content = """
 I'm a Senior Security Production Engineer at CoreWeave, working on observability, monitoring, and development of security services.
 
-Previously I worked at TikTok USDS and IBM in DevOps and SRE roles.
+Previously I worked as an SRE at TikTok USDS and a DevOps Developer at IBM Cloud.
 
 I studied Computer Engineering at the University of British Columbia.
 
-Outside of work, I enjoy playing the piano and learning Mandarin.
+Outside of work, I enjoy exploring new trails, running, playing the piano, and learning Chinese.
 
 **Toolbox:** Ansible · Docker · Kubernetes · Linux · Grafana · Git · Python · SQL · Bash · Golang
 """
