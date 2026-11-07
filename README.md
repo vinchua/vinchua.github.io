@@ -5,6 +5,8 @@ Personal site of Vincent Chua, built with [Hugo](https://gohugo.io/) and the
 GitHub Pages.
 
 This site was previously built with Eleventy; the content was migrated to Hugo.
+It is intentionally a single-page site until blog posts exist: the home page is
+the About Me.
 
 ## Requirements
 
@@ -32,11 +34,11 @@ hugo server -D
 |---|---|
 | `hugo.toml` | Site config: menus, PaperMod params, home intro, search/archive outputs |
 | `content/blog/` | Blog posts |
-| `content/about.md` | About page (`/about/`) |
 | `content/archives.md` | Archive page (`/archives/`) |
 | `content/search.md` | Search page (`/search/`) |
 | `layouts/404.html` | Custom 404 page |
 | `layouts/_partials/header.html` | Local PaperMod header override (conditional menu items) |
+| `static/about/index.html` | Redirects the old `/about/` URL to the home page |
 | `static/` | Files served as-is (`Resume.pdf`) |
 | `themes/PaperMod` | Theme, pinned as a git submodule |
 | `.github/workflows/hugo.yml` | Builds the site and publishes `public/` to `gh-pages` |

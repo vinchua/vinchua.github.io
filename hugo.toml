@@ -36,7 +36,7 @@ buildExpired = false
   tocopen = false
 
   [params.homeInfoParams]
-    Title = "Hi, I'm Vincent 👋"
+    Title = "Hi, I'm Vincent"
     Content = """
 Hi, I'm Vincent. I'm a DevOps Developer at IBM Canada, on the SaaS team for Cloud Pak for Business Automation.
 
@@ -80,12 +80,6 @@ I'm interested in DevOps and IT technologies and enjoy working on the command li
       requiresPosts = true
 
   [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 20
-
-  [[menu.main]]
     identifier = "archives"
     name = "Archive"
     url = "/archives/"
@@ -98,6 +92,8 @@ I'm interested in DevOps and IT technologies and enjoy working on the command li
     name = "Search"
     url = "/search/"
     weight = 40
+    [menu.main.params]
+      requiresPosts = true
 
   [[menu.main]]
     identifier = "tags"
