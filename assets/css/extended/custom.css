@@ -1,0 +1,6 @@
+/* Brighter text in dark mode (PaperMod defaults are fairly dim). */
+:root[data-theme="dark"] {
+    --primary: rgb(238, 239, 240);
+    --secondary: rgb(178, 179, 181);
+    --content: rgb(226, 227, 229);
+}
