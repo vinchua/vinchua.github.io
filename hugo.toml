@@ -76,6 +76,8 @@ I'm interested in DevOps and IT technologies and enjoy working on the command li
     name = "Blog"
     url = "/blog/"
     weight = 10
+    [menu.main.params]
+      requiresPosts = true
 
   [[menu.main]]
     identifier = "about"
@@ -88,6 +90,8 @@ I'm interested in DevOps and IT technologies and enjoy working on the command li
     name = "Archive"
     url = "/archives/"
     weight = 30
+    [menu.main.params]
+      requiresPosts = true
 
   [[menu.main]]
     identifier = "search"
@@ -100,6 +104,8 @@ I'm interested in DevOps and IT technologies and enjoy working on the command li
     name = "Tags"
     url = "/tags/"
     weight = 50
+    [menu.main.params]
+      requiresTags = true
 
   [[menu.main]]
     identifier = "github"

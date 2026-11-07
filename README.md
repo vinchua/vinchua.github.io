@@ -36,6 +36,7 @@ hugo server -D
 | `content/archives.md` | Archive page (`/archives/`) |
 | `content/search.md` | Search page (`/search/`) |
 | `layouts/404.html` | Custom 404 page |
+| `layouts/_partials/header.html` | Local PaperMod header override (conditional menu items) |
 | `static/` | Files served as-is (`Resume.pdf`) |
 | `themes/PaperMod` | Theme, pinned as a git submodule |
 | `.github/workflows/hugo.yml` | Builds the site and publishes `public/` to `gh-pages` |
@@ -59,6 +60,30 @@ categories: ["blog"]
 description: "Short summary."
 ---
 ```
+
+There are no placeholder posts. The **Blog** section (and `/blog/` URL) is
+created automatically from the first post you add.
+
+## Conditional navigation
+
+Blog-related tabs hide themselves when there is nothing to show. This is
+controlled by menu params in `hugo.toml`:
+
+```toml
+[[menu.main]]
+  identifier = "blog"
+  name = "Blog"
+  url = "/blog/"
+  [menu.main.params]
+    requiresPosts = true   # hidden until content/blog/ has a post
+```
+
+- `requiresPosts` — hides the item while there are no posts in `blog`
+- `requiresTags` — hides the item while no tags exist
+
+The logic lives in `layouts/_partials/header.html`, which is a copy of
+PaperMod's header with a filter around the menu loop. Re-check it after theme
+updates.
 
 ## Deploying
 
