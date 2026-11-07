@@ -40,9 +40,11 @@ buildExpired = false
     Content = """
 I'm a Senior Security Production Engineer at CoreWeave.
 
-Previously an SRE at TikTok USDS, a DevOps Developer at IBM Cloud, a DevOps Engineer Intern at Teledyne FLIR, and a SysAdmin Intern at BC Cancer Research Center.
+Previously an SRE at TikTok USDS and a DevOps Developer at IBM Cloud.
 
 I studied Computer Engineering at the University of British Columbia.
+
+Outside of work, I enjoy playing the piano and learning Mandarin.
 
 **Toolbox:** Ansible · Docker · Kubernetes · Linux · Grafana · Git · Python · SQL · Bash · Golang
 """
