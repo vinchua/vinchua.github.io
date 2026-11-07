@@ -1,5 +1,7 @@
-# Ignore installed npm packages
-node_modules/
+# Hugo build output
+public/
+resources/
+.hugo_build.lock
 
-# Ignore eleventy output during manual tests
-_site/
+# macOS
+.DS_Store

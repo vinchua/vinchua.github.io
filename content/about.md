@@ -1,8 +1,10 @@
 ---
-title: About Me
-navTitle: Skills
-tags: nav
-weight: 1
+title: "About Me"
+date: 2020-08-01
+draft: false
+description: "Skills and background."
+ShowToc: false
+ShowBreadCrumbs: true
 ---
 
 The following are skills I have been exposed to, in no particular order.
@@ -17,27 +19,25 @@ Python, YAML, Bash, Java/Groovy
     - YAML, Groovy, Bash, Python, Perl, Batch, Powershell
     - Plugin Integration (Static Code Analysis, Warnings NG)
 - Docker
-    - Create Dockerfiles, build and export images 
+    - Create Dockerfiles, build and export images
 - Ansible
     - Deploy software and configurations with playbooks
-- Kubernetes 
-    - Red Hat Openshift Kubernetes experience configuring secrets, configmaps, daemonsets, pods
+- Kubernetes
+    - Red Hat OpenShift Kubernetes experience configuring secrets, configmaps, daemonsets, pods
     - Debug worker nodes
-- Hashicorp Vault
+- HashiCorp Vault
 - AWS (EC2, S3, CloudFormation)
-    - completed Cloud Practioner Essentials online training
+    - Completed Cloud Practitioner Essentials online training
 
 ### IT and System Administration
 - Windows Server 2012, Group Policy Management
 - Active Directory and LDAP
-- Puppet 
+- Puppet
 - HPC Administration (Slurm)
 - Microsoft Exchange
-- VMWare vSphere
+- VMware vSphere
 
-### Linux 
+### Linux
 - Development and administration for CentOS and Ubuntu environments
 - Compile software from source
 - Debug system issues with networking, firewall, authentication
-
-

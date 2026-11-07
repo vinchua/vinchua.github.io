@@ -1,112 +1,104 @@
-# eleventy-dot-js-blog
+# vinchua.github.io
 
-A starter project showing how to build a blog with the [Eleventy](https://11ty.dev/) static site generator using [JavaScript templates (`*.11ty.js`)](https://11ty.dev/languages/javascript/).
+Personal site of Vincent Chua, built with [Hugo](https://gohugo.io/) and the
+[PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme, deployed to
+GitHub Pages.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/cd87e631-aeaa-45fe-9c99-800ef96b53b1/deploy-status)](https://app.netlify.com/sites/eleventy-dot-js-blog/deploys)
+This site was previously built with Eleventy; the content was migrated to Hugo.
 
-## Demo
+## Requirements
 
-* [Netlify](https://eleventy-dot-js-blog.netlify.com/)
+- [Hugo extended](https://gohugo.io/installation/) **v0.158.0+** (PaperMod requirement)
+- Git (the theme is a git submodule)
 
-## Summary
+On macOS: `brew install hugo`.
 
-The [layouts](https://gitlab.com/reubenlillie/eleventy-dot-js-blog/-/tree/master/_includes/layouts) are written entirely in vanilla JavaScript (files with the [`*.11ty.js`](https://www.11ty.dev/docs/languages/javascript/) extension). Eleventy processes those templates and creates prerendered copies of the site HTML.
+## Local development
 
-## Features
+```sh
+git clone --recurse-submodules https://github.com/vinchua/vinchua.github.io.git
+cd vinchua.github.io
 
-* 💯 Lighthouse scores for 
-  * 💨 Performance 
-  * ♿ Accessibility
-  * ☑️  Best practices
-  * 🔍 Search Engine Optimization
-* 🏸 Lightweight front end
-  * 🕸 Semantic HTML
-  * 🎨 Progressively-enhanced, modular CSS
-  * 🍦 Vanilla [JavaScript templates](https://11ty.dev/languages/javascript/)
-* 🎛️ Customizable design and data options
-* 🍬 [Choose](https://gitlab.com/reubenlillie/eleventy-dot-js-blog/-/blob/master/_includes/shortcodes/favicon.js) between emoji favicons and the Real Favicon Generator
-* 💡 Dark/light mode based on user’s system preferences
-* 🔣 Multilingual support (instructions in [`./content/README.md`](https://gitlab.com/reubenlillie/eleventy-dot-js-blog/-/blob/master/content/README.md) and [`./_data/README.md`](https://gitlab.com/reubenlillie/eleventy-dot-js-blog/-/blob/master/_data/README.md))
-* 🔖 Smart pagination
-* 🗒️ Extensive inline documentation
+# If you cloned without --recurse-submodules:
+git submodule update --init --recursive
 
-## Project Roadmap
-
-Here’s a list of new features being considered. [Submit a feature request](https://gitlab.com/reubenlillie/eleventy-dot-js-blog/-/issues/new) to add to this list!
-
-* 🎚️ Dark/light mode toggle #14
-* 🏷️ Tag archives for blog (coming with [Computed Data](https://www.11ty.dev/docs/data-computed/) in Eleventy v0.11.0) #7
-* 🗓 Date archives for blog #16
-* 💌 Contact form (using [Netlify Forms](https://docs.netlify.com/forms/setup/)) #17
-* 📡 [RSS feed](https://www.11ty.dev/docs/plugins/rss/) for blog posts #3
-* 🗺️ Sitemap #54
-* 🔍 [Search](https://www.hawksworx.com/blog/adding-search-to-a-jamstack-site/) #18
-* 📄 Documentation site #19
-* 📣 [Webmentions](https://mxb.dev/blog/using-webmentions-on-static-sites/) #20
-* 💬 [Comments](https://jamstack-comments.netlify.com/) #21
-* 📝 Integrate with [Netlify CMS](https://www.netlifycms.org/) #22
-* ⚙️  Service worker to cache content for offline access #23
-* 🖌️ Apply logo/branding assets #24
-* 🖍️ [Syntax highlighting](https://www.11ty.dev/docs/plugins/syntaxhighlight/) for code blocks #25
-* ✍️  Author information posts (options for mulitple authors and guest submissions) #26
-
-## Getting started
-
-Run a local copy of this site on your computer.
-
-Install [Node.js](https://nodejs.org/) on your machine (see [11ty documentation for version requirements](https://www.11ty.dev/docs/getting-started/)).
-
-Then enter the following commands into your terminal:
-
-### 1. Clone this repository and all its dependencies
-
-```cli
-git clone git@gitlab.com:reubenlillie/eleventy-dot-js-blog.git my-blog-directory-name
+hugo server -D
+# → http://localhost:1313/
 ```
 
-### 2. Go to the working directory
+## Structure
 
-```cli
-cd my-blog-directory-name
-```
-Specifically take a look at the file named [`.eleventy.js`](https://gitlab.com/reubenlillie/eleventy-dot-js-blog/-/blob/master/.eleventy.js) to see if you want to [configure any Eleventy options differently](https://www.11ty.dev/docs/config/).
+| Path | Purpose |
+|---|---|
+| `hugo.toml` | Site config: menus, PaperMod params, home intro, search/archive outputs |
+| `content/blog/` | Blog posts |
+| `content/about.md` | About page (`/about/`) |
+| `content/archives.md` | Archive page (`/archives/`) |
+| `content/search.md` | Search page (`/search/`) |
+| `layouts/404.html` | Custom 404 page |
+| `layouts/_partials/header.html` | Local PaperMod header override (conditional menu items) |
+| `static/` | Files served as-is (`Resume.pdf`) |
+| `themes/PaperMod` | Theme, pinned as a git submodule |
+| `.github/workflows/hugo.yml` | Builds the site and publishes `public/` to `gh-pages` |
 
-### 3. Install the project dependencies with [NPM](https://www.npmjs.com/)
+## Writing a post
 
-```cli
-npm install
-```
-
-### 4. Edit the `.js` files in the [`_data`](https://gitlab.com/reubenlillie/eleventy-dot-js-blog/-/blob/master/_data/site.js) directory with your site information
-
-### 5. Run Eleventy
-
-```cli
-npx eleventy
-```
-
-Or build and host locally for local development
-
-```cli
-npx eleventy --serve
+```sh
+hugo new content blog/my-post.md
+hugo server -D
 ```
 
-Or build automatically when a template changes
+Posts use front matter such as:
 
-```cli
-npx eleventy --watch
+```yaml
+---
+title: "My post"
+date: 2026-11-07
+draft: false
+tags: ["devops"]
+categories: ["blog"]
+description: "Short summary."
+---
 ```
 
-Or in debug mode
+There are no placeholder posts. The **Blog** section (and `/blog/` URL) is
+created automatically from the first post you add.
 
-```cli
-DEBUG=* npx eleventy
+## Conditional navigation
+
+Blog-related tabs hide themselves when there is nothing to show. This is
+controlled by menu params in `hugo.toml`:
+
+```toml
+[[menu.main]]
+  identifier = "blog"
+  name = "Blog"
+  url = "/blog/"
+  [menu.main.params]
+    requiresPosts = true   # hidden until content/blog/ has a post
 ```
 
-## Publish your own copy
+- `requiresPosts` — hides the item while there are no posts in `blog`
+- `requiresTags` — hides the item while no tags exist
 
-The command `npm run build` will generate a copy of the site files in a `_site` directory, which you can deploy with any hosting service.
+The logic lives in `layouts/_partials/header.html`, which is a copy of
+PaperMod's header with a filter around the menu loop. Re-check it after theme
+updates.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://gitlab.com/reubenlillie/eleventy-dot-js-blog)
+## Deploying
 
-&copy; 2020 by [Reuben L. Lillie](https://twitter.com/reubenlillie)
+Push to `master` (or run the workflow manually). The GitHub Actions workflow
+installs Hugo extended, builds with `--gc --minify`, and pushes the result to
+the `gh-pages` branch, which GitHub Pages serves.
+
+## Updating the theme
+
+```sh
+git submodule update --remote themes/PaperMod
+git add themes/PaperMod && git commit -m "Update PaperMod"
+```
+
+## Credits
+
+- Theme: [PaperMod](https://github.com/adityatelange/hugo-PaperMod) (MIT)
+- Site generator: [Hugo](https://gohugo.io/)

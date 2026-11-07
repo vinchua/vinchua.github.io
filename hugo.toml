@@ -1,0 +1,128 @@
+baseURL = "https://vinchua.github.io/"
+locale = "en-US"
+defaultContentLanguage = "en"
+title = "Vincent Chua"
+theme = "PaperMod"
+enableRobotsTXT = true
+enableEmoji = true
+
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+[pagination]
+  pagerSize = 10
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[params]
+  env = "production"
+  description = "Vincent Chua — DevOps developer, UBC computer engineering grad, Linux tinkerer."
+  author = "Vincent Chua"
+  mainSections = ["blog"]
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = false
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableScrollToTop = false
+  hideSummary = false
+  showtoc = false
+  tocopen = false
+
+  [params.homeInfoParams]
+    Title = "Hi, I'm Vincent 👋"
+    Content = """
+Hi, I'm Vincent. I'm a DevOps Developer at IBM Canada, on the SaaS team for Cloud Pak for Business Automation.
+
+I graduated from the University of British Columbia, with a Bachelors in Computer Engineering.
+
+I've worked at:
+- [Genome Sciences Center](https://www.bcgsc.ca/) on the IT Systems team as a co-op
+- [FLIR Systems](https://www.flir.ca/iis/machine-vision) as a DevOps Engineer co-op
+- [Arlo Technologies](https://www.arlo.com/en-ca/default.aspx) as a Firmware developer co-op
+
+I'm interested in DevOps and IT technologies and enjoy working on the command line. In my free time, I enjoy distro-hopping on Linux (currently using Endeavour OS), playing the piano, and learning Mandarin.
+"""
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/vinchua/"
+
+  [[params.socialIcons]]
+    name = "gitlab"
+    url = "https://gitlab.com/vinchua/"
+
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:vchua8@gmail.com"
+
+  [params.editPost]
+    URL = "https://github.com/vinchua/vinchua.github.io/edit/master/content/"
+    Text = "Edit this page"
+    appendFilePath = true
+
+  [params.footer]
+    text = "© 2026 Vincent Chua · Built with [Hugo](https://gohugo.io/) and [PaperMod](https://github.com/adityatelange/hugo-PaperMod)"
+
+[menu]
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
+    weight = 10
+    [menu.main.params]
+      requiresPosts = true
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "archives"
+    name = "Archive"
+    url = "/archives/"
+    weight = 30
+    [menu.main.params]
+      requiresPosts = true
+
+  [[menu.main]]
+    identifier = "search"
+    name = "Search"
+    url = "/search/"
+    weight = 40
+
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 50
+    [menu.main.params]
+      requiresTags = true
+
+  [[menu.main]]
+    identifier = "github"
+    name = "GitHub"
+    url = "https://github.com/vinchua"
+    weight = 60
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    noClasses = false
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
+    style = "monokai"
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
