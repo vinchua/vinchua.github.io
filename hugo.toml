@@ -54,10 +54,6 @@ Outside of work, I enjoy exploring new trails, running, playing the piano, and l
     url = "https://github.com/vinchua/"
 
   [[params.socialIcons]]
-    name = "gitlab"
-    url = "https://gitlab.com/vinchua/"
-
-  [[params.socialIcons]]
     name = "email"
     url = "mailto:vchua8@gmail.com"
 
