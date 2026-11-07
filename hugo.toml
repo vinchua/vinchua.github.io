@@ -38,7 +38,7 @@ buildExpired = false
   [params.homeInfoParams]
     Title = "Hi, I'm Vincent"
     Content = """
-I'm a Senior Security Production Engineer at CoreWeave.
+I'm a Senior Security Production Engineer at CoreWeave. Most of my work is on the observability side of our security log aggregation platform — Grafana, Prometheus, and Loki — plus building out oncall, alerting, and monitoring dashboards for company-wide access management and VPN services. I also write scripts to spin up local test environments for our Kubernetes apps, and lately I've been putting together a repo of agent skill files that automate everyday dev workflows like Jira ticket creation and alert triage.
 
 Previously I worked at TikTok USDS and IBM in DevOps and SRE roles.
 
