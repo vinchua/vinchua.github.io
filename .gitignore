@@ -3,3 +3,8 @@ node_modules/
 
 # Ignore eleventy output during manual tests
 _site/
+
+# Hugo build output
+public/
+resources/
+.hugo_build.lock
