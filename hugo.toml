@@ -54,8 +54,8 @@ Outside of work, I enjoy exploring new trails, running, playing the piano, and l
     url = "https://github.com/vinchua/"
 
   [[params.socialIcons]]
-    name = "email"
-    url = "mailto:vchua8@gmail.com"
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/vincent-chua"
 
   [params.editPost]
     URL = "https://github.com/vinchua/vinchua.github.io/edit/master/content/"
@@ -73,6 +73,12 @@ Outside of work, I enjoy exploring new trails, running, playing the piano, and l
     weight = 10
     [menu.main.params]
       requiresPosts = true
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 20
 
   [[menu.main]]
     identifier = "archives"
